@@ -1,0 +1,31 @@
+/* Minimal styles to provide layout and accessibility helpers */
+:root{--bg:#ffffff;--text:#111827;--muted:#6b7280;--primary:#0ea5a4}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; color:var(--text);background:var(--bg)}
+.container{max-width:1100px;margin:0 auto;padding:0 1rem}
+.navbar{background:#fff;border-bottom:1px solid #e5e7eb}
+.nav-container{display:flex;align-items:center;justify-content:space-between;padding:1rem}
+.logo{font-weight:700;text-decoration:none;color:var(--text);font-size:1.125rem}
+.nav-links{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.hero{padding:4rem 0;background:linear-gradient(180deg,#f8fafc,transparent)}
+.hero-content{max-width:700px}
+.btn-primary{display:inline-block;padding:.6rem 1rem;background:var(--primary);color:#fff;border-radius:6px;text-decoration:none}
+.section{padding:3rem 0}
+.section-header{margin-bottom:1.25rem}
+.underline{height:3px;width:48px;background:var(--primary);margin-top:.5rem;border-radius:2px}
+.services-grid{display:flex;gap:1rem;flex-wrap:wrap}
+.service-card{background:#fff;border:1px solid #e6e7eb;padding:1rem;border-radius:8px;flex:1;min-width:220px}
+.icon{font-size:1.75rem;margin-bottom:.5rem}
+.contact-wrapper{display:flex;gap:2rem;flex-wrap:wrap}
+.contact-info{flex:1;min-width:260px}
+.styled-form{flex:1;min-width:260px}
+.form-group{margin-bottom:1rem}
+label{display:block;margin-bottom:.25rem;font-weight:600}
+input[type="text"],input[type="email"],textarea{width:100%;padding:.6rem;border:1px solid #d1d5db;border-radius:6px}
+.btn-submit{background:var(--primary);color:#fff;padding:.6rem 1rem;border:none;border-radius:6px;cursor:pointer}
+.main-footer{border-top:1px solid #e5e7eb;padding:1rem 0;margin-top:2rem}
+.main-footer p{margin:0;text-align:center;color:var(--muted)}
+/* Utility: visually-hidden for screen readers */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (max-width:700px){.nav-links{display:none}.contact-wrapper{flex-direction:column}}
