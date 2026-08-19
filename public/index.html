@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="InfiPre Solutions provides web, mobile, and cloud services to elevate your digital presence with innovative technology and consulting.">
     <title>InfiPre Solutions | Innovative Digital Excellence</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +14,8 @@
 <body>
     <header class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">InfiPre<span>Solutions</span></a>
-            <nav>
+            <a href="#" class="logo" aria-label="InfiPre Solutions homepage">InfiPre<span>Solutions</span></a>
+            <nav aria-label="Main navigation">
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -56,17 +58,17 @@
                 </div>
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="icon">🚀</div>
+                        <div class="icon" aria-hidden="true">🚀</div>
                         <h3>Web Development</h3>
                         <p>Building responsive and high-performance web applications using the latest technologies.</p>
                     </div>
                     <div class="service-card">
-                        <div class="icon">📱</div>
+                        <div class="icon" aria-hidden="true">📱</div>
                         <h3>Mobile Solutions</h3>
                         <p>Crafting intuitive mobile experiences for iOS and Android platforms.</p>
                     </div>
                     <div class="service-card">
-                        <div class="icon">☁️</div>
+                        <div class="icon" aria-hidden="true">☁️</div>
                         <h3>Cloud Services</h3>
                         <p>Scalable cloud infrastructure and migration strategies for modern enterprises.</p>
                     </div>
@@ -90,7 +92,7 @@
                             <li><strong>Location:</strong> Sanquelim, Goa</li>
                         </ul>
                     </div>
-                    <form id="contact-form" class="styled-form">
+                    <form id="contact-form" class="styled-form" action="#" novalidate>
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -112,7 +114,7 @@
 
     <footer class="main-footer">
         <div class="container">
-            <p>&copy; 2024 InfiPre Solutions. All rights reserved.</p>
+            <p>&copy; <span id="footer-year">2024</span> InfiPre Solutions. All rights reserved.</p>
         </div>
     </footer>
 
